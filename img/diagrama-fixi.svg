@@ -1,0 +1,50 @@
+<svg viewBox="0 0 400 300" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#06B6D4"></path>
+        </marker>
+    </defs>
+
+    <!-- Background to make it visible on white backgrounds -->
+    <rect width="100%" height="100%" fill="#111827"/>
+
+    <!-- Center Phone -->
+    <g transform="translate(160 110)">
+        <rect x="0" y="0" width="80" height="130" rx="10" stroke="#06B6D4" stroke-width="2" fill="#2D3748"></rect>
+        <rect x="5" y="5" width="70" height="100" rx="5" fill="#1A202C"></rect>
+        <text x="40" y="65" font-family="Inter, sans-serif" font-size="40" font-weight="bold" fill="#06B6D4" text-anchor="middle">F</text>
+        <circle cx="40" cy="118" r="4" fill="#06B6D4"></circle>
+        <text x="40" y="90" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">App Fixi</text>
+    </g>
+
+    <!-- Top-Left Icon: Customer -->
+    <g transform="translate(30, 20)">
+        <path d="M25 40 L25 15 L45 0 L65 15 L65 40 M15 40 L75 40" stroke="white" stroke-width="2" fill="none"></path>
+        <text x="45" y="60" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">Cliente</text>
+    </g>
+    <path d="M165 130 Q 100 80, 80 55" stroke="#06B6D4" stroke-width="1.5" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"></path>
+
+    <!-- Bottom-Left Icon: Technician -->
+    <g transform="translate(30, 210)">
+        <circle cx="45" cy="15" r="10" stroke="white" stroke-width="2" fill="none"></circle>
+        <path d="M25 50 C 25 30, 65 30, 65 50 Z" stroke="white" stroke-width="2" fill="none"></path>
+        <text x="45" y="70" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">Técnico Certificado</text>
+    </g>
+    <path d="M165 220 Q 100 230, 80 245" stroke="#06B6D4" stroke-width="1.5" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"></path>
+
+    <!-- Top-Right Icon: Vehicle -->
+    <g transform="translate(280, 20)">
+        <path d="M 5,25 C 5,20 10,20 15,20 L 25,10 L 65,10 L 75,20 L 95,20 C 100,20 105,20 105,25 L 105,35 L 5,35 Z" stroke="white" stroke-width="2" fill="none"></path>
+        <circle cx="25" cy="40" r="5" stroke="white" stroke-width="2" fill="none"></circle>
+        <circle cx="85" cy="40" r="5" stroke="white" stroke-width="2" fill="none"></circle>
+        <text x="55" y="60" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">Vehículo</text>
+    </g>
+    <path d="M235 130 Q 290 80, 320 55" stroke="#06B6D4" stroke-width="1.5" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"></path>
+
+    <!-- Bottom-Right Icon: Fixi Hub -->
+    <g transform="translate(290, 210)">
+        <path d="M10 50 L10 20 L30 20 L30 10 L60 10 L60 20 L80 20 L80 50 Z M 35 50 L 35 30 L 55 30 L 55 50 M35 40 L55 40" stroke="white" stroke-width="2" fill="none"></path>
+        <text x="45" y="70" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">Fixi Hub</text>
+    </g>
+    <path d="M235 220 Q 290 230, 320 245" stroke="#06B6D4" stroke-width="1.5" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"></path>
+</svg>

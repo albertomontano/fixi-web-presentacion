@@ -1,0 +1,53 @@
+<svg viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="#1F2937" />
+
+    <!-- Phase 1: Mexico City (Central Point) -->
+    <g>
+        <circle cx="250" cy="80" r="12" fill="#06B6D4">
+            <animate attributeName="r" values="12;17;12" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="250" cy="80" r="6" fill="white" />
+        <text x="275" y="70" font-family="Inter, sans-serif" font-size="16" fill="white" font-weight="bold">Fase 1</text>
+        <text x="275" y="88" font-family="Inter, sans-serif" font-size="14" fill="#E5E7EB">Ciudad piloto</text>
+    </g>
+
+    <!-- Phase 2: National Expansion -->
+    <g>
+        <!-- Point 1 -->
+        <circle cx="170" cy="160" r="7" fill="#06B6D4" opacity="0.9" />
+        <line x1="250" y1="80" x2="170" y2="160" stroke="#0891B2" stroke-width="1.5" stroke-dasharray="4 4"/>
+        
+        <!-- Point 2 -->
+        <circle cx="330" cy="160" r="7" fill="#06B6D4" opacity="0.9" />
+        <line x1="250" y1="80" x2="330" y2="160" stroke="#0891B2" stroke-width="1.5" stroke-dasharray="4 4"/>
+        
+        <text x="50" y="150" font-family="Inter, sans-serif" font-size="16" fill="white" font-weight="bold">Fase 2</text>
+        <text x="50" y="168" font-family="Inter, sans-serif" font-size="14" fill="#E5E7EB">Expansión Nacional</text>
+    </g>
+
+    <!-- Phase 3: LATAM Expansion -->
+    <g>
+        <!-- Point 1 (e.g., Colombia) -->
+        <circle cx="190" cy="300" r="9" fill="#0891B2" />
+        <path d="M250,80 C 240,150 200,250 192,298" stroke="white" stroke-width="2" fill="none" stroke-dasharray="5,5">
+             <animate attributeName="stroke-dashoffset" values="0;-20" dur="1s" repeatCount="indefinite" />
+        </path>
+        
+        <!-- Point 2 (e.g., Brazil) -->
+        <circle cx="280" cy="360" r="9" fill="#0891B2" />
+         <path d="M250,80 C 260,200 280,300 280,358" stroke="white" stroke-width="2" fill="none" stroke-dasharray="5,5">
+            <animate attributeName="stroke-dashoffset" values="0;-20" dur="1.2s" repeatCount="indefinite" />
+        </path>
+
+        <!-- Point 3 (e.g., Chile) -->
+        <circle cx="370" cy="300" r="9" fill="#0891B2" />
+        <path d="M250,80 C 260,150 360,250 368,298" stroke="white" stroke-width="2" fill="none" stroke-dasharray="5,5">
+            <animate attributeName="stroke-dashoffset" values="0;-20" dur="1.5s" repeatCount="indefinite" />
+        </path>
+        
+        <text x="360" y="240" font-family="Inter, sans-serif" font-size="16" fill="white" font-weight="bold" text-anchor="middle">Fase 3</text>
+        <text x="360" y="258" font-family="Inter, sans-serif" font-size="14" fill="#E5E7EB" text-anchor="middle">Expansión LATAM</text>
+    </g>
+</svg>

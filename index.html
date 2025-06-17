@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación para Inversionistas: Fixi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+            min-height: 80vh; /* Ensure slides take up significant height */
+        }
+        .slide.active {
+            display: flex;
+        }
+        /* Custom animation for fade in */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div id="presentation-container" class="w-full max-w-5xl bg-gray-800 rounded-2xl shadow-2xl overflow-hidden">
+        
+        <!-- Slide Container -->
+        <div id="slides" class="relative">
+
+            <!-- Slide 1: Título -->
+            <div class="slide active fade-in flex-col items-center justify-center text-center p-8 md:p-12 bg-cover bg-center" style="background-image: linear-gradient(rgba(10,15,25,0.7), rgba(5,10,15,0.9)), url('https://images.unsplash.com/photo-1617804457311-3c13c63b7f1f?q=80&w=1974&auto=format&fit=crop');">
+                <h1 class="text-6xl md:text-8xl font-black tracking-tight text-cyan-400">Fixi</h1>
+                <p class="mt-4 text-xl md:text-3xl font-semibold">Mecánica Inteligente. A la puerta de tu casa.</p>
+                <p class="mt-8 text-lg text-gray-300">Presentación para inversionistas</p>
+            </div>
+
+            <!-- Slide 2: El Problema -->
+            <div class="slide fade-in flex-col md:flex-row items-center justify-center p-8 md:p-12">
+                <div class="md:w-1/2 md:pr-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">El Problema: El Caos de la Mecánica Tradicional</h2>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-6">Ser dueño de un auto es indispensable, pero su mantenimiento es una pesadilla.</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><span class="font-bold text-white">Pérdida de Productividad:</span> Invertir un día entero en el taller.</li>
+                        <li><span class="font-bold text-white">Falta de Transparencia:</span> Desconfianza y cobros excesivos (78% de los usuarios).</li>
+                        <li><span class="font-bold text-white">Experiencia Deficiente:</span> Un proceso roto, anclado en el siglo XX.</li>
+                        <li><span class="font-bold text-white">Inseguridad:</span> Entregar un activo valioso sin garantías.</li>
+                    </ul>
+                     <p class="mt-6 text-lg font-bold">Un mercado de miles de millones operando con una lógica obsoleta.</p>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="img/mujer-conduciendo-y-teniendo-dolor-de-cabeza.jpg" alt="Mujer frustrada en su auto por un problema mecánico" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Slide 3: La Solución -->
+            <div class="slide fade-in flex-col md:flex-row-reverse items-center justify-center p-8 md:p-12">
+                <div class="md:w-1/2 md:pl-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">La Solución: Fixi</h2>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-6">La plataforma integral que profesionaliza y digitaliza el servicio automotriz.</h3>
+                     <ul class="space-y-4 text-gray-300">
+                        <li><span class="font-bold text-white">Conveniencia Absoluta:</span> Recolectamos, reparamos y entregamos. Devolvemos tiempo.</li>
+                        <li><span class="font-bold text-white">Transparencia Radical:</span> Control total y seguimiento en tiempo real desde la app.</li>
+                        <li><span class="font-bold text-white">Confianza y Seguridad:</span> Técnicos certificados y procesos estandarizados.</li>
+                        <li><span class="font-bold text-white">Tecnología de Punta:</span> IA para pre-diagnósticos y optimización logística.</li>
+                    </ul>
+                    <p class="mt-6 text-lg font-bold">No somos un taller. Somos una empresa de tecnología y logística.</p>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="img/diagrama-fixi.svg" alt="Gráfico de la solución Fixi" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Slide 4: ¿Cómo Funciona? -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">¿Cómo Funciona? El Ecosistema Fixi</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">1. Agendar</h4>
+                        <p class="text-sm text-gray-300">El usuario describe el problema en la app y agenda la recolección.</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">2. Recolección</h4>
+                        <p class="text-sm text-gray-300">Técnico certificado inspecciona, documenta y se lleva el auto.</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">3. Diagnóstico</h4>
+                        <p class="text-sm text-gray-300">En el Fixi Hub, se diagnostica y se envía un presupuesto detallado.</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">4. Aprobación</h4>
+                        <p class="text-sm text-gray-300">El cliente aprueba o rechaza la reparación desde la app.</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">5. Entrega y Pago</h4>
+                        <p class="text-sm text-gray-300">Se entrega el auto reparado y el pago se hace de forma segura.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: El Proceso Visual del Cliente -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-2 text-center">Una Experiencia Transparente y Digital</h2>
+                <p class="text-lg text-gray-400 mb-8">Así es como el cliente vive el proceso en la app.</p>
+                <div class="w-full">
+                    <svg viewBox="0 0 1280 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Connecting Arrows -->
+                        <defs>
+                            <marker id="arrowhead-process" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#06B6D4" />
+                            </marker>
+                        </defs>
+                        <path d="M 130 150 C 150 110, 190 110, 210 150" fill="none" stroke="#06B6D4" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead-process)" />
+                        <path d="M 310 150 C 330 110, 370 110, 390 150" fill="none" stroke="#06B6D4" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead-process)" />
+                        <path d="M 490 150 C 510 110, 550 110, 570 150" fill="none" stroke="#06B6D4" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead-process)" />
+                        <path d="M 670 150 C 690 110, 730 110, 750 150" fill="none" stroke="#06B6D4" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead-process)" />
+                        <path d="M 850 150 C 870 110, 910 110, 930 150" fill="none" stroke="#06B6D4" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead-process)" />
+                        <path d="M 1030 150 C 1050 110, 1090 110, 1110 150" fill="none" stroke="#06B6D4" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead-process)" />
+
+                        <!-- Step 1: Solicitud de servicio -->
+                        <g transform="translate(30, 50)">
+                            <rect x="0" y="0" width="100" height="200" rx="15" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+                            <rect x="5" y="5" width="90" height="170" rx="10" fill="#2D3748"/>
+                            <circle cx="50" cy="185" r="5" stroke="#4B5563" stroke-width="1.5"/>
+                            <text x="50" y="240" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">1. Solicitud</text>
+                            <text x="50" y="30" text-anchor="middle" font-size="10" fill="#06B6D4" font-weight="bold">Solicitar Servicio</text>
+                            <path d="M 20 50 h 60 v 40 h -60 z" stroke="#4B5563" stroke-width="1.5" fill="#1F2937"/>
+                            <text x="50" y="75" text-anchor="middle" font-size="9" fill="gray">Mapa</text>
+                            <rect x="20" y="100" width="60" height="15" rx="3" fill="#06B6D4"/>
+                            <text x="50" y="110" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Confirmar</text>
+                        </g>
+
+                        <!-- Step 2: Recolección -->
+                        <g transform="translate(210, 50)">
+                            <rect x="0" y="0" width="100" height="200" rx="15" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+                            <rect x="5" y="5" width="90" height="170" rx="10" fill="#2D3748"/>
+                            <circle cx="50" cy="185" r="5" stroke="#4B5563" stroke-width="1.5"/>
+                            <text x="50" y="240" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">2. Recolección</text>
+                            <text x="50" y="30" text-anchor="middle" font-size="10" fill="#06B6D4" font-weight="bold">Técnico en Camino</text>
+                            <circle cx="50" cy="80" r="20" fill="#4B5563"/>
+                            <circle cx="50" cy="75" r="8" stroke="white" stroke-width="1.5" fill="none"/>
+                            <path d="M35 100 C 35 85, 65 85, 65 100 Z" stroke="white" stroke-width="1.5" fill="none"/>
+                        </g>
+
+                        <!-- Step 3: Diagnóstico -->
+                        <g transform="translate(390, 50)">
+                            <rect x="0" y="0" width="100" height="200" rx="15" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+                            <rect x="5" y="5" width="90" height="170" rx="10" fill="#2D3748"/>
+                            <circle cx="50" cy="185" r="5" stroke="#4B5563" stroke-width="1.5"/>
+                            <text x="50" y="240" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">3. Diagnóstico</text>
+                            <text x="50" y="30" text-anchor="middle" font-size="10" fill="#06B6D4" font-weight="bold">Reporte y Cotización</text>
+                            <rect x="15" y="45" width="70" height="8" fill="#4B5563" rx="2"/><rect x="15" y="58" width="70" height="8" fill="#4B5563" rx="2"/>
+                            <text x="50" y="90" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Total: $250.00</text>
+                            <rect x="20" y="100" width="60" height="15" rx="3" fill="#06B6D4"/>
+                            <text x="50" y="110" text-anchor="middle" font-size="9" fill="white">Aprobar Reparación</text>
+                        </g>
+
+                        <!-- Step 4: Reparación -->
+                        <g transform="translate(570, 50)">
+                            <rect x="0" y="0" width="100" height="200" rx="15" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+                            <rect x="5" y="5" width="90" height="170" rx="10" fill="#2D3748"/>
+                            <circle cx="50" cy="185" r="5" stroke="#4B5563" stroke-width="1.5"/>
+                            <text x="50" y="240" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">4. Reparación</text>
+                            <text x="50" y="30" text-anchor="middle" font-size="10" fill="#06B6D4" font-weight="bold">Progreso</text>
+                            <circle cx="50" cy="80" r="25" stroke-dasharray="100" stroke-dashoffset="40" stroke="#06B6D4" stroke-width="4" fill="none"/>
+                            <text x="50" y="85" text-anchor="middle" font-size="14" fill="white" font-weight="bold">60%</text>
+                            <text x="50" y="120" font-size="9" fill="gray">Reparando motor...</text>
+                        </g>
+
+                        <!-- Step 5: Agendar Entrega -->
+                        <g transform="translate(750, 50)">
+                            <rect x="0" y="0" width="100" height="200" rx="15" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+                            <rect x="5" y="5" width="90" height="170" rx="10" fill="#2D3748"/>
+                            <circle cx="50" cy="185" r="5" stroke="#4B5563" stroke-width="1.5"/>
+                            <text x="50" y="240" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">5. Agendar Entrega</text>
+                            <text x="50" y="30" text-anchor="middle" font-size="10" fill="#06B6D4" font-weight="bold">¡Tu auto está listo!</text>
+                            <path d="M 20 50 h 60 v 40 h -60 z" stroke="#4B5563" stroke-width="1.5" fill="#1F2937"/>
+                            <path d="M 50 55 a 10 10 0 0 1 0 20 a 10 10 0 0 1 0 -20 m 0 5 v 10 m -5 -5 h 10" stroke="#06B6D4" stroke-width="1.5" fill="none"/>
+                            <rect x="20" y="100" width="60" height="15" rx="3" fill="#06B6D4"/>
+                            <text x="50" y="110" text-anchor="middle" font-size="9" fill="white">Agendar</text>
+                        </g>
+                        
+                        <!-- Step 6: Entrega y Recepción -->
+                        <g transform="translate(930, 50)">
+                            <rect x="0" y="0" width="100" height="200" rx="15" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+                            <rect x="5" y="5" width="90" height="170" rx="10" fill="#2D3748"/>
+                            <circle cx="50" cy="185" r="5" stroke="#4B5563" stroke-width="1.5"/>
+                            <text x="50" y="240" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">6. Entrega</text>
+                            <text x="50" y="30" text-anchor="middle" font-size="10" fill="#06B6D4" font-weight="bold">En Camino</text>
+                            <path d="M 20 50 h 60 v 80 h -60 z" stroke="#4B5563" stroke-width="1.5" fill="#1F2937"/>
+                            <text x="50" y="95" text-anchor="middle" font-size="9" fill="gray">Mapa en vivo</text>
+                            <circle cx="50" cy="80" r="4" fill="#06B6D4"/>
+                        </g>
+
+                        <!-- Step 7: Pago Seguro -->
+                        <g transform="translate(1110, 50)">
+                            <rect x="0" y="0" width="100" height="200" rx="15" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+                            <rect x="5" y="5" width="90" height="170" rx="10" fill="#2D3748"/>
+                            <circle cx="50" cy="185" r="5" stroke="#4B5563" stroke-width="1.5"/>
+                            <text x="50" y="240" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif">7. Pago</text>
+                            <text x="50" y="30" text-anchor="middle" font-size="10" fill="#06B6D4" font-weight="bold">Pago Seguro</text>
+                            <path d="M20 50 h 60 v 20 h -60 z" stroke="#4B5563" stroke-width="1.5" fill="#1F2937"/>
+                            <text x="50" y="62" font-size="8" fill="gray">**** **** **** 1234</text>
+                            <rect x="20" y="130" width="60" height="20" rx="3" fill="#06B6D4"/>
+                            <text x="50" y="142" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Pagar ahora</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            
+            <!-- Slide 5: Ventaja Tecnológica -->
+            <div class="slide fade-in flex-col md:flex-row items-center justify-center p-8 md:p-12">
+                 <div class="md:w-1/2 md:pr-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">La Ventaja Tecnológica</h2>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-6">Nuestro "Unfair Advantage"</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><span class="font-bold text-white">IA de Diagnóstico Predictivo:</span> Análisis de síntomas para pre-diagnósticos.</li>
+                        <li><span class="font-bold text-white">Plataforma de Logística Inteligente (FLO):</span> Optimización de rutas en tiempo real.</li>
+                        <li><span class="font-bold text-white">CRM Automatizado:</span> Notificaciones proactivas y comunicación centralizada.</li>
+                        <li><span class="font-bold text-white">Fixi Hub de Alta Eficiencia:</span> Centros diseñados para la máxima productividad.</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0 flex items-center justify-center">
+                    <img src="https://placehold.co/400x400/2D3748/63B3ED?text=IA" alt="Cerebro digital representando IA" class="rounded-full shadow-2xl">
+                </div>
+            </div>
+
+            <!-- Slide 6: El Mercado -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">El Mercado: Una Oportunidad Gigante</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <p class="text-4xl font-black text-cyan-300">+$25B</p>
+                        <p class="mt-2 text-gray-300">Mercado de servicios y refacciones en México.</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <p class="text-4xl font-black text-cyan-300">+40M</p>
+                        <p class="mt-2 text-gray-300">Vehículos en circulación con necesidad constante de mantenimiento.</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg col-span-1 md:col-span-2">
+                        <h4 class="font-bold text-lg text-white">Mercado Objetivo Inicial</h4>
+                        <p class="mt-2 text-gray-300">Top 20% de la población urbana (NSE A/B, C+) que valora su tiempo y usa servicios on-demand.</p>
+                    </div>
+                </div>
+                <p class="mt-8 text-lg font-bold">Apuntamos a una pequeña porción de un mercado masivo.</p>
+            </div>
+
+            <!-- Slide 7: Modelo de Negocio -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                 <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Modelo de Negocio Escalable</h2>
+                 <div class="w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                     <div class="bg-gray-700 p-4 rounded-lg">
+                         <h4 class="font-bold text-lg mb-2">Diagnóstico</h4>
+                         <p class="text-sm text-gray-300">Tarifa justa y económica por diagnóstico.</p>
+                     </div>
+                      <div class="bg-gray-700 p-4 rounded-lg">
+                         <h4 class="font-bold text-lg mb-2">Mano de Obra</h4>
+                         <p class="text-sm text-gray-300">Principal ingreso con márgenes del 60-70%.</p>
+                     </div>
+                      <div class="bg-gray-700 p-4 rounded-lg">
+                         <h4 class="font-bold text-lg mb-2">Refacciones</h4>
+                         <p class="text-sm text-gray-300">Convenios comerciales con las principales marcas. Margen controlado del 5% sobre refacción. El cliente escoge las opciones de calidad.</p>
+                     </div>
+                      <div class="bg-gray-700 p-4 rounded-lg">
+                         <h4 class="font-bold text-lg mb-2">Logística</h4>
+                         <p class="text-sm text-gray-300">Cargo justo por servicio y recolección (tarifas estándar y competitivas - tipo Uber/Didi ).</p>
+                     </div>
+                 </div>
+                 <div class="mt-8 w-full max-w-4xl bg-cyan-900/50 border border-cyan-700 p-6 rounded-lg">
+                    <h4 class="font-bold text-xl text-center text-cyan-300">Flujos Futuros (Año 2-3)</h4>
+                    <div class="mt-4 flex justify-around">
+                        <p><span class="font-semibold">Fixi Prime:</span> Suscripciones</p>
+                        <p><span class="font-semibold">Data as a Service:</span> Venta de datos agregados</p>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Slide 9: Desglose de Ingresos -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Anatomía de Nuestros Ingresos (Ejemplos)</h2>
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Left Column: Diagnosis Only -->
+                    <div class="bg-gray-700 p-6 rounded-lg border border-gray-600">
+                        <h3 class="font-bold text-white text-xl mb-4 text-center">Escenario: Sólo Diagnóstico</h3>
+                        <div class="space-y-3 text-lg">
+                            <div class="flex justify-between"><span>Diagnóstico:</span> <span class="font-semibold">$250.00</span></div>
+                            <div class="flex justify-between"><span>Logística:</span> <span class="font-semibold">$180.00</span></div>
+                            <div class="flex justify-between border-t border-gray-500 pt-2"><span>Subtotal:</span> <span class="font-semibold">$430.00</span></div>
+                            <div class="flex justify-between"><span>IVA (16%):</span> <span class="font-semibold">$68.80</span></div>
+                            <div class="flex justify-between text-cyan-300 font-bold border-t border-cyan-700 pt-2"><span>Total Cliente:</span> <span>$498.80</span></div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Full Service -->
+                    <div class="bg-gray-700 p-6 rounded-lg border border-cyan-500">
+                        <h3 class="font-bold text-white text-xl mb-4 text-center">Escenario: Servicio Completo</h3>
+                        <div class="space-y-3 text-lg">
+                            <div class="flex justify-between"><span>Diagnóstico:</span> <span class="font-semibold">$250.00</span></div>
+                            <div class="flex justify-between"><span>Refacciones:</span> <span class="font-semibold">$890.00</span></div>
+                            <div class="flex justify-between"><span>Mano de Obra:</span> <span class="font-semibold">$650.00</span></div>
+                            <div class="flex justify-between"><span>Logística:</span> <span class="font-semibold">$180.00</span></div>
+                            <div class="flex justify-between border-t border-gray-500 pt-2"><span>Subtotal:</span> <span class="font-semibold">$1,970.00</span></div>
+                            <div class="flex justify-between"><span>IVA (16%):</span> <span class="font-semibold">$315.20</span></div>
+                            <div class="flex justify-between text-cyan-300 font-bold border-t border-cyan-700 pt-2"><span>Total Cliente:</span> <span>$2,285.20</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Distribución de Ingresos -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Distribución de Ingresos Proyectada</h2>
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- Doughnut Chart -->
+                    <div class="flex items-center justify-center">
+                        <svg width="250" height="250" viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#4B5563" stroke-width="12"/>
+                            <!-- Mano de Obra (50%) -->
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#06B6D4" stroke-width="12" stroke-dasharray="169.65, 169.65" transform="rotate(-90 60 60)" />
+                            <!-- Diagnóstico (27%) -->
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#0E7490" stroke-width="12" stroke-dasharray="91.6, 247.7" transform="rotate(90 60 60)" />
+                            <!-- Logística (20%) -->
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#164E63" stroke-width="12" stroke-dasharray="67.8, 271.5" transform="rotate(187.2 60 60)" />
+                            <!-- Refacciones (3%) -->
+                             <circle cx="60" cy="60" r="54" fill="none" stroke="#083344" stroke-width="12" stroke-dasharray="10.2, 329.1" transform="rotate(259.2 60 60)" />
+                        </svg>
+                    </div>
+                    <!-- Legend -->
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 rounded-full mr-3" style="background-color: #06B6D4;"></div>
+                            <div>
+                                <p class="font-bold text-white text-lg">Mano de Obra: 50%</p>
+                                <p class="text-sm text-gray-400">Nuestro principal generador de ingresos y margen.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 rounded-full mr-3" style="background-color: #0E7490;"></div>
+                            <div>
+                                <p class="font-bold text-white text-lg">Diagnóstico: 27%</p>
+                                <p class="text-sm text-gray-400">Ingreso base por la validación técnica.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 rounded-full mr-3" style="background-color: #164E63;"></div>
+                            <div>
+                                <p class="font-bold text-white text-lg">Logística: 20%</p>
+                                <p class="text-sm text-gray-400">Cubre la conveniencia del servicio puerta a puerta.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-center">
+                            <div class="w-4 h-4 rounded-full mr-3" style="background-color: #083344;"></div>
+                            <div>
+                                <p class="font-bold text-white text-lg">Refacciones: 3%</p>
+                                <p class="text-sm text-gray-400">Margen de conveniencia sobre partes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 8: La Visión -->
+            <div class="slide fade-in flex-col md:flex-row-reverse items-center justify-center p-8 md:p-12">
+                 <div class="md:w-1/2 md:pl-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">La Visión: El Futuro del Cuidado Automotriz</h2>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-6">Ser el sistema operativo para el propietario de un vehículo.</h3>
+                    <ol class="list-decimal list-inside space-y-3 text-gray-300">
+                        <li><span class="font-bold text-white">Fase 1 (Año 1-2):</span> Consolidar ciudad piloto y alcanzar punto de equilibrio.</li>
+                        <li><span class="font-bold text-white">Fase 2 (Año 3-4):</span> Expansión nacional a 5 ciudades y servicios para flotillas.</li>
+                        <li><span class="font-bold text-white">Fase 3 (Año 5+):</span> Liderazgo en México e inicio de expansión a LATAM.</li>
+                    </ol>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="img/diagrama-expansion-latam.svg" alt="Mapa de América Latina" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Slide 9: La Oportunidad Financiera -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">La Oportunidad Financiera: Proyecciones a 5 Años</h2>
+                <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Revenue Projections Chart -->
+                    <div class="md:col-span-2 bg-gray-700 p-6 rounded-lg">
+                        <h3 class="font-bold text-white mb-4">Proyección de Ingresos (USD)</h3>
+                        <div>
+                            <!-- Visual bars container -->
+                            <div class="flex items-end h-64 space-x-4 border-b border-gray-600">
+                                <!-- Year 1 -->
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 10%;" title="$450K"></div>
+                                <!-- Year 2 -->
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 25%;" title="$1.8M"></div>
+                                <!-- Year 3 -->
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 45%;" title="$5.2M"></div>
+                                <!-- Year 4 -->
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 70%;" title="$12.5M"></div>
+                                <!-- Year 5 -->
+                                <div class="flex-1 bg-cyan-500 w-full rounded-t-md" style="height: 100%;" title="$25M+"></div>
+                            </div>
+
+                            <!-- Labels container -->
+                            <div class="flex space-x-4 pt-2">
+                                <!-- Year 1 Label -->
+                                <div class="flex-1 text-center">
+                                    <p class="text-xs text-cyan-300 font-bold">$450K</p>
+                                    <p class="text-sm mt-1">Año 1</p>
+                                </div>
+                                <!-- Year 2 Label -->
+                                <div class="flex-1 text-center">
+                                    <p class="text-xs text-cyan-300 font-bold">$1.8M</p>
+                                    <p class="text-sm mt-1">Año 2</p>
+                                </div>
+                                <!-- Year 3 Label -->
+                                <div class="flex-1 text-center">
+                                    <p class="text-xs text-cyan-300 font-bold">$5.2M</p>
+                                    <p class="text-sm mt-1">Año 3</p>
+                                </div>
+                                <!-- Year 4 Label -->
+                                <div class="flex-1 text-center">
+                                    <p class="text-xs text-cyan-300 font-bold">$12.5M</p>
+                                    <p class="text-sm mt-1">Año 4</p>
+                                </div>
+                                <!-- Year 5 Label -->
+                                <div class="flex-1 text-center">
+                                    <p class="text-xs text-cyan-300 font-bold">$25M+</p>
+                                    <p class="text-sm mt-1">Año 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Key Metrics -->
+                    <div class="bg-gray-700 p-6 rounded-lg flex flex-col justify-center">
+                        <h3 class="font-bold text-white mb-4">Métricas Clave</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li>
+                                <p class="font-semibold text-white">Ticket Promedio:</p>
+                                <p class="text-cyan-300">$250 USD</p>
+                            </li>
+                            <li>
+                                <p class="font-semibold text-white">Margen Bruto Proyectado:</p>
+                                <p class="text-cyan-300">~65%</p>
+                            </li>
+                            <li>
+                                <p class="font-semibold text-white">Costo de Adquisición (CAC):</p>
+                                <p class="text-cyan-300">&lt; $30 USD</p>
+                            </li>
+                            <li>
+                                <p class="font-semibold text-white">Lifetime Value (LTV):</p>
+                                <p class="text-cyan-300">&gt; $900 USD</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mt-6 text-sm text-gray-400">*Las cifras son proyecciones basadas en análisis de mercado y supuestos del modelo de negocio.</p>
+            </div>
+
+
+
+
+
+            <!-- Slide 10: La Petición -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">La Petición (The Ask)</h2>
+                <p class="text-2xl mb-4">Buscamos una inversión Semilla de</p>
+                <p class="text-7xl font-black text-cyan-300 my-4">$1.5 Millones USD</p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <p class="text-3xl font-bold text-cyan-400">40%</p>
+                        <p>Desarrollo Tecnológico</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <p class="text-3xl font-bold text-cyan-400">35%</p>
+                        <p>Expansión Operativa</p>
+                    </div>
+                     <div class="bg-gray-700 p-4 rounded-lg">
+                        <p class="text-3xl font-bold text-cyan-400">25%</p>
+                        <p>Marketing y Adquisición</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Equipo Fundador -->
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Equipo Fundador</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <img src="https://placehold.co/150x150/718096/FFFFFF?text=CEO" class="rounded-full mx-auto mb-4 border-4 border-cyan-400">
+                        <h4 class="font-bold text-xl">Alberto Montaño</h4>
+                        <p class="text-cyan-400">CEO</p>
+                        <p class="text-sm text-gray-400 mt-2">Experiencia finanzas, operaciones y software.</p>
+                    </div>
+                     <div>
+                        <img src="https://placehold.co/150x150/718096/FFFFFF?text=CTO" class="rounded-full mx-auto mb-4 border-4 border-gray-600">
+                        <h4 class="font-bold text-xl">Alfonso Rodríguez</h4>
+                        <p class="text-gray-500">COO</p>
+                        <p class="text-sm text-gray-400 mt-2">Experiencia en producto, logística y pasión por la industria automotriz.</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/150x150/718096/FFFFFF?text=COO" class="rounded-full mx-auto mb-4 border-4 border-gray-600">
+                        <h4 class="font-bold text-xl">Mateo Mesa</h4>
+                        <p class="text-gray-500">CTO & CMO</p>
+                        <p class="text-sm text-gray-400 mt-2">Experiencia en desarrollo de software, producto y marca</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 12: Contacto -->
+            <div class="slide fade-in flex-col items-center justify-center text-center p-8 md:p-12">
+                <h2 class="text-5xl md:text-6xl font-black text-cyan-400">Gracias.</h2>
+                <p class="mt-8 text-xl font-semibold">Alberto Montaño</p>
+                <p class="text-lg text-gray-300">CEO & Fundador, Fixi</p>
+                <div class="mt-6 text-cyan-300 space-y-2">
+                    <p>albertomontanopadilla@gmail.com</p>
+                    <p>+52 6144740872</p>
+                    <p>www.fixi.mx</p>
+                </div>
+                 <p class="mt-12 text-xl font-semibold">Cambiamos como cuidamos nuestros autos.</p>
+            </div>
+            
+        </div>
+
+        <!-- Navigation -->
+        <div class="bg-gray-900 p-4 flex items-center justify-between">
+            <button id="prevBtn" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                Anterior
+            </button>
+            <div id="slide-counter" class="text-sm text-gray-400"></div>
+            <button id="nextBtn" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                Siguiente
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- SCRIPT PARA LA LÓGICA DE LA PRESENTACIÓN ---
+
+        // Seleccionar los elementos del DOM
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slide-counter');
+        
+        // Estado inicial de la presentación
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        // Función para mostrar la diapositiva actual y ocultar las demás
+        function showSlide(slideIndex) {
+            // Validar el índice
+            if (slideIndex < 0 || slideIndex >= totalSlides) {
+                console.error("Índice de diapositiva fuera de rango:", slideIndex);
+                return;
+            }
+
+            // Ocultar todas las diapositivas
+            slides.forEach(slide => {
+                slide.classList.remove('active', 'fade-in');
+            });
+            
+            // Mostrar la diapositiva correcta con animación
+            slides[slideIndex].classList.add('active', 'fade-in');
+            
+            // Actualizar el estado del slide actual
+            currentSlide = slideIndex;
+            
+            // Actualizar el contador de diapositivas
+            updateCounter();
+            
+            // Habilitar o deshabilitar los botones de navegación
+            updateNavButtons();
+        }
+
+        // Función para actualizar el contador de diapositivas (ej: "Diapositiva 1 de 11")
+        function updateCounter() {
+            slideCounter.textContent = `Diapositiva ${currentSlide + 1} de ${totalSlides}`;
+        }
+        
+        // Función para habilitar o deshabilitar los botones "Anterior" y "Siguiente"
+        function updateNavButtons() {
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+        }
+
+        // --- Event Listeners ---
+        
+        // Botón "Siguiente"
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < totalSlides - 1) {
+                showSlide(currentSlide + 1);
+            }
+        });
+
+        // Botón "Anterior"
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        });
+
+        // Navegación con teclas de flecha
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') {
+                nextBtn.click(); // Simula un clic en el botón siguiente
+            } else if (event.key === 'ArrowLeft') {
+                prevBtn.click(); // Simula un clic en el botón anterior
+            }
+        });
+        
+        // Iniciar la presentación en la primera diapositiva
+        window.onload = () => {
+            showSlide(0);
+        };
+    </script>
+
+</body>
+</html>
