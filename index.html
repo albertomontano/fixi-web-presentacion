@@ -133,7 +133,7 @@
                             <path d="M 20 50 h 60 v 40 h -60 z" stroke="#4B5563" stroke-width="1.5" fill="#1F2937"/>
                             <text x="50" y="75" text-anchor="middle" font-size="9" fill="gray">Mapa</text>
                             <rect x="20" y="100" width="60" height="15" rx="3" fill="#06B6D4"/>
-                            <text x="50" y="110" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Confirmar</text>
+                            <text x="50" y="110" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Agendar</text>
                         </g>
 
                         <!-- Step 2: Recolección -->
@@ -158,7 +158,7 @@
                             <rect x="15" y="45" width="70" height="8" fill="#4B5563" rx="2"/><rect x="15" y="58" width="70" height="8" fill="#4B5563" rx="2"/>
                             <text x="50" y="90" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Total: $250.00</text>
                             <rect x="20" y="100" width="60" height="15" rx="3" fill="#06B6D4"/>
-                            <text x="50" y="110" text-anchor="middle" font-size="9" fill="white">Aprobar Reparación</text>
+                            <text x="50" y="110" text-anchor="middle" font-size="9" fill="white">Aprobar</text>
                         </g>
 
                         <!-- Step 4: Reparación -->
@@ -215,41 +215,153 @@
             </div>
 
             
-            <!-- Slide 5: Ventaja Tecnológica -->
             <div class="slide fade-in flex-col md:flex-row items-center justify-center p-8 md:p-12">
-                 <div class="md:w-1/2 md:pr-8">
+                <div class="md:w-1/2 md:pr-8">
                     <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">La Ventaja Tecnológica</h2>
                     <h3 class="text-xl md:text-2xl font-semibold mb-6">Nuestro "Unfair Advantage"</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li><span class="font-bold text-white">IA de Diagnóstico Predictivo:</span> Análisis de síntomas para pre-diagnósticos.</li>
-                        <li><span class="font-bold text-white">Plataforma de Logística Inteligente (FLO):</span> Optimización de rutas en tiempo real.</li>
-                        <li><span class="font-bold text-white">CRM Automatizado:</span> Notificaciones proactivas y comunicación centralizada.</li>
-                        <li><span class="font-bold text-white">Fixi Hub de Alta Eficiencia:</span> Centros diseñados para la máxima productividad.</li>
+                    <ul class="space-y-4 text-gray-300 text-lg">
+                        <li><span class="font-bold text-white">IA de Diagnóstico Predictivo:</span> Análisis de +10k puntos de datos (modelo, año, síntomas) para pre-diagnósticos con 90% de acierto.</li>
+                        <li><span class="font-bold text-white">Plataforma Logística (FLO):</span> Algoritmos que optimizan rutas de recolección y entrega en tiempo real, reduciendo costos operativos en un 30%.</li>
+                        <li><span class="font-bold text-white">CRM Automatizado:</span> Notificaciones proactivas de mantenimiento y comunicación centralizada que fideliza al cliente.</li>
+                        <li><span class="font-bold text-white">Fixi Hub de Alta Eficiencia:</span> Centros de operación diseñados bajo principios de lean manufacturing para máxima productividad.</li>
                     </ul>
                 </div>
                 <div class="md:w-1/2 mt-8 md:mt-0 flex items-center justify-center">
-                    <img src="https://placehold.co/400x400/2D3748/63B3ED?text=IA" alt="Cerebro digital representando IA" class="rounded-full shadow-2xl">
+                    <svg width="100%" height="100%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <style>
+                            .node { fill: #1F2937; stroke: #06B6D4; stroke-width: 2; transition: all 0.3s ease; }
+                            .central-node { fill: #06B6D4; stroke: #99F6E4; }
+                            .connection { stroke: rgba(6, 182, 212, 0.2); stroke-width: 1.5; }
+                            .pulse {
+                                stroke: rgba(207, 250, 254, 0.8);
+                                stroke-width: 2.5;
+                                animation: pulse-animation 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+                                opacity: 0;
+                            }
+                            @keyframes pulse-animation {
+                                0% { stroke-dashoffset: 200; opacity: 0.8; }
+                                70% { opacity: 1; }
+                                100% { stroke-dashoffset: 0; opacity: 0; }
+                            }
+                        </style>
+                        
+                        <path class="connection" d="M 200 200 Q 100 100 80 150" fill="none"/>
+                        <path class="connection" d="M 200 200 Q 300 100 320 150" fill="none"/>
+                        <path class="connection" d="M 200 200 Q 100 300 80 250" fill="none"/>
+                        <path class="connection" d="M 200 200 Q 300 300 320 250" fill="none"/>
+                        <path class="connection" d="M 80 150 Q 150 50 200 60" fill="none"/>
+                        <path class="connection" d="M 320 150 Q 250 50 200 60" fill="none"/>
+                        <path class="connection" d="M 80 250 Q 150 350 200 340" fill="none"/>
+                        <path class="connection" d="M 320 250 Q 250 350 200 340" fill="none"/>
+                        <path class="connection" d="M 80 150 L 80 250" fill="none"/>
+                        <path class="connection" d="M 320 150 L 320 250" fill="none"/>
+                        <path class="connection" d="M 200 60 Q 50 200 80 250" fill="none" />
+                        <path class="connection" d="M 200 60 Q 350 200 320 250" fill="none" />
+
+                        <path class="pulse" stroke-dasharray="200" d="M 200 200 Q 100 100 80 150" fill="none" style="animation-delay: 0s;"/>
+                        <path class="pulse" stroke-dasharray="200" d="M 80 250 Q 150 350 200 340" fill="none" style="animation-delay: 0.5s;"/>
+                        <path class="pulse" stroke-dasharray="200" d="M 320 150 Q 250 50 200 60" fill="none" style="animation-delay: 1s;"/>
+                        <path class="pulse" stroke-dasharray="200" d="M 200 60 Q 50 200 80 250" fill="none" style="animation-delay: 1.5s;"/>
+                        <path class="pulse" stroke-dasharray="200" d="M 200 200 Q 300 300 320 250" fill="none" style="animation-delay: 2s;"/>
+                        <path class="pulse" stroke-dasharray="200" d="M 320 250 L 320 150" fill="none" style="animation-delay: 2.5s;" />
+
+                        <circle class="node central-node" cx="200" cy="200" r="30" filter="url(#glow)"/>
+                        <text x="200" y="205" font-family="Inter, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">FIXI</text>
+                        
+                        <circle class="node" cx="80" cy="150" r="15"/>
+                        <circle class="node" cx="320" cy="150" r="15"/>
+                        <circle class="node" cx="80" cy="250" r="15"/>
+                        <circle class="node" cx="320" cy="250" r="15"/>
+                        <circle class="node" cx="200" cy="60" r="20"/>
+                        <circle class="node" cx="200" cy="340" r="20"/>
+                    </svg>
                 </div>
             </div>
 
             <!-- Slide 6: El Mercado -->
             <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">El Mercado: Una Oportunidad Gigante</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-2 text-center">El Mercado: Una Oportunidad Gigante y Enfocada</h2>
+                <p class="text-lg text-gray-400 mb-8">Atacamos el segmento más grande y desatendido del mercado.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-                    <div class="bg-gray-700 p-6 rounded-lg">
-                        <p class="text-4xl font-black text-cyan-300">+$25B</p>
-                        <p class="mt-2 text-gray-300">Mercado de servicios y refacciones en México.</p>
+                    <div class="bg-gray-700 p-6 rounded-lg flex flex-col justify-center text-center">
+                        <p class="text-5xl font-black text-cyan-300">+$25B USD</p>
+                        <p class="mt-2 text-gray-300">Mercado anual de servicios y refacciones en México (aftermarket).</p>
                     </div>
-                    <div class="bg-gray-700 p-6 rounded-lg">
-                        <p class="text-4xl font-black text-cyan-300">+40M</p>
-                        <p class="mt-2 text-gray-300">Vehículos en circulación con necesidad constante de mantenimiento.</p>
+                    <div class="bg-gray-700 p-6 rounded-lg flex flex-col justify-center text-center">
+                        <p class="text-5xl font-black text-cyan-300">+40M</p>
+                        <p class="mt-2 text-gray-300">Vehículos en circulación con una necesidad constante de mantenimiento.</p>
                     </div>
-                    <div class="bg-gray-700 p-6 rounded-lg col-span-1 md:col-span-2">
-                        <h4 class="font-bold text-lg text-white">Mercado Objetivo Inicial</h4>
-                        <p class="mt-2 text-gray-300">Top 20% de la población urbana (NSE A/B, C+) que valora su tiempo y usa servicios on-demand.</p>
+                    <div class="bg-cyan-900/50 border border-cyan-700 p-6 rounded-lg col-span-1 md:col-span-2">
+                        <h4 class="font-bold text-xl text-white text-center">Nuestro Mercado Objetivo Principal</h4>
+                        <p class="mt-2 text-gray-300 text-center text-lg">
+                            Nos enfocamos en el <span class="font-bold text-white">núcleo de la clase media profesional (NSE B, C+, C)</span>. Propietarios de vehículos semi-nuevos (3-8 años de antigüedad) que valoran la eficiencia y ya consumen servicios on-demand.
+                        </p>
                     </div>
                 </div>
-                <p class="mt-8 text-lg font-bold">Apuntamos a una pequeña porción de un mercado masivo.</p>
+            </div>
+
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Nuestro Cliente Ideal: El Profesionista Urbano</h2>
+                <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                    <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-cyan-500">
+                        <h3 class="font-bold text-white text-xl mb-4">Perfil del Usuario</h3>
+                        <ul class="space-y-3 text-gray-300 list-disc list-inside">
+                            <li>Profesionista o "Godínez" (28-45 años).</li>
+                            <li>Ingreso estable (NSE B, C+, C).</li>
+                            <li>Depende de su auto para el día a día.</li>
+                            <li>Digitalmente activo.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-cyan-500">
+                        <h3 class="font-bold text-white text-xl mb-4">Su Vehículo Principal</h3>
+                        <ul class="space-y-3 text-gray-300 list-disc list-inside">
+                            <li>Modelos confiables: <span class="font-semibold text-white">Aveo, Sentra, Jetta, Versa, Mazda 3.</span></li>
+                            <li>Antigüedad: 3 a 8 años.</li>
+                            <li>Fuera de la garantía de agencia.</li>
+                            <li>Es una herramienta de trabajo, no un lujo.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-cyan-500">
+                        <h3 class="font-bold text-white text-xl mb-4">Sus Retos y Dolores</h3>
+                        <ul class="space-y-3 text-gray-300 list-disc list-inside">
+                            <li>Falta de tiempo (especialmente fines de semana).</li>
+                            <li>Desconfianza en talleres tradicionales.</li>
+                            <li>Busca eficiencia y soluciones prácticas.</li>
+                            <li>Presupuesto definido para su auto.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-2">Un Comportamiento que Ya Existe</h2>
+                <p class="text-lg text-gray-400 mb-8">Nuestro cliente ya paga por recuperar su tiempo. Fixi es el siguiente paso lógico.</p>
+                
+                <div class="relative w-full max-w-2xl flex items-center justify-center" style="height: 300px;">
+                    <div class="absolute bg-cyan-500 text-white w-40 h-40 rounded-full flex flex-col items-center justify-center shadow-2xl z-10">
+                        <p class="font-bold text-lg">Profesionista</p>
+                        <p class="text-sm">Urbano</p>
+                    </div>
+                    <div class="absolute top-0 left-16 bg-gray-700 p-3 rounded-lg shadow-lg"><p>Transporte <br><span class="font-bold text-cyan-300">(Uber/Didi)</span></p></div>
+                    <div class="absolute top-12 right-0 bg-gray-700 p-3 rounded-lg shadow-lg"><p>Comida <br><span class="font-bold text-cyan-300">(Rappi)</span></p></div>
+                    <div class="absolute bottom-12 left-0 bg-gray-700 p-3 rounded-lg shadow-lg"><p>Supermercado <br><span class="font-bold text-cyan-300">(Cornershop)</span></p></div>
+                    <div class="absolute bottom-0 right-16 bg-gray-700 p-3 rounded-lg shadow-lg"><p>Limpieza Hogar <br><span class="font-bold text-cyan-300">(App Local)</span></p></div>
+                    
+                    <div class="absolute -bottom-8 bg-cyan-800 border-2 border-cyan-400 p-4 rounded-lg shadow-2xl transform scale-110">
+                        <p class="text-lg">Mantenimiento de Auto<br><span class="font-black text-xl text-cyan-300">FIXI</span></p>
+                    </div>
+                </div>
+
+                <p class="mt-16 text-xl font-semibold text-gray-200 w-full max-w-3xl">Quien valora su tiempo para no ir al súper o limpiar su casa, valora <span class="text-cyan-400">aún más</span> no perder un <span class="text-cyan-400">día</span> entero en el taller mecánico.</p>
             </div>
 
             <!-- Slide 7: Modelo de Negocio -->
@@ -280,6 +392,22 @@
                         <p><span class="font-semibold">Data as a Service:</span> Venta de datos agregados</p>
                     </div>
                  </div>
+            </div>
+
+                        <!-- Slide 8: La Visión -->
+            <div class="slide fade-in flex-col md:flex-row-reverse items-center justify-center p-8 md:p-12">
+                 <div class="md:w-1/2 md:pl-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">La Visión: El Futuro del Cuidado Automotriz</h2>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-6">Ser el sistema operativo para el propietario de un vehículo.</h3>
+                    <ol class="list-decimal list-inside space-y-3 text-gray-300">
+                        <li><span class="font-bold text-white">Fase 1 (Año 0-3):</span> Consolidar ciudad piloto y alcanzar punto de equilibrio.</li>
+                        <li><span class="font-bold text-white">Fase 2 (Año 3-4):</span> Expansión nacional a 5 ciudades y servicios para flotillas.</li>
+                        <li><span class="font-bold text-white">Fase 3 (Año 5+):</span> Liderazgo en México e inicio de expansión a LATAM.</li>
+                    </ol>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="img/diagrama-expansion-latam.svg" alt="Mapa de América Latina" class="rounded-lg shadow-lg">
+                </div>
             </div>
 
             <!-- Slide 9: Desglose de Ingresos -->
@@ -365,71 +493,40 @@
                 </div>
             </div>
             
-            <!-- Slide 8: La Visión -->
-            <div class="slide fade-in flex-col md:flex-row-reverse items-center justify-center p-8 md:p-12">
-                 <div class="md:w-1/2 md:pl-8">
-                    <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">La Visión: El Futuro del Cuidado Automotriz</h2>
-                    <h3 class="text-xl md:text-2xl font-semibold mb-6">Ser el sistema operativo para el propietario de un vehículo.</h3>
-                    <ol class="list-decimal list-inside space-y-3 text-gray-300">
-                        <li><span class="font-bold text-white">Fase 1 (Año 1-2):</span> Consolidar ciudad piloto y alcanzar punto de equilibrio.</li>
-                        <li><span class="font-bold text-white">Fase 2 (Año 3-4):</span> Expansión nacional a 5 ciudades y servicios para flotillas.</li>
-                        <li><span class="font-bold text-white">Fase 3 (Año 5+):</span> Liderazgo en México e inicio de expansión a LATAM.</li>
-                    </ol>
-                </div>
-                <div class="md:w-1/2 mt-8 md:mt-0">
-                    <img src="img/diagrama-expansion-latam.svg" alt="Mapa de América Latina" class="rounded-lg shadow-lg">
-                </div>
-            </div>
 
-            <!-- Slide 9: La Oportunidad Financiera -->
+
+            <!-- Slide 12: La Oportunidad Financiera -->
             <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">La Oportunidad Financiera: Proyecciones a 5 Años</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Proyecciones a 5 Años (MXN)</h2>
                 <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Revenue Projections Chart -->
                     <div class="md:col-span-2 bg-gray-700 p-6 rounded-lg">
-                        <h3 class="font-bold text-white mb-4">Proyección de Ingresos (USD)</h3>
+                        <h3 class="font-bold text-white mb-4">Proyección de Ingresos (MXN)</h3>
                         <div>
                             <!-- Visual bars container -->
                             <div class="flex items-end h-64 space-x-4 border-b border-gray-600">
-                                <!-- Year 1 -->
-                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 10%;" title="$450K"></div>
-                                <!-- Year 2 -->
-                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 25%;" title="$1.8M"></div>
-                                <!-- Year 3 -->
-                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 45%;" title="$5.2M"></div>
-                                <!-- Year 4 -->
-                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 70%;" title="$12.5M"></div>
-                                <!-- Year 5 -->
-                                <div class="flex-1 bg-cyan-500 w-full rounded-t-md" style="height: 100%;" title="$25M+"></div>
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 0%;" title="$0M">$0M</div>
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 10%;" title="$1.7M">$1.7M</div>
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 25%;" title="$2.9M">$2.9M</div>
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 45%;" title="$4.1M">$4.1M</div>
+                                <div class="flex-1 bg-cyan-600 w-full rounded-t-md" style="height: 70%;" title="$8.6M">$8.6M</div>
+                                <div class="flex-1 bg-cyan-500 w-full rounded-t-md" style="height: 100%;" title="$15.2M+">$15.2M+</div>
                             </div>
-
                             <!-- Labels container -->
                             <div class="flex space-x-4 pt-2">
-                                <!-- Year 1 Label -->
-                                <div class="flex-1 text-center">
-                                    <p class="text-xs text-cyan-300 font-bold">$450K</p>
-                                    <p class="text-sm mt-1">Año 1</p>
+                                <div class="flex-1 text-center"><p class="text-sm mt-1">Año 0</p>
+                                    <p class="text-sm mt-1">Pre-desarrollo</p>
                                 </div>
-                                <!-- Year 2 Label -->
-                                <div class="flex-1 text-center">
-                                    <p class="text-xs text-cyan-300 font-bold">$1.8M</p>
-                                    <p class="text-sm mt-1">Año 2</p>
+                                <div class="flex-1 text-center"><p class="text-sm mt-1">Año 1</p>
+                                <p class="text-sm mt-1">Primer Fixi Hub</p>
                                 </div>
-                                <!-- Year 3 Label -->
-                                <div class="flex-1 text-center">
-                                    <p class="text-xs text-cyan-300 font-bold">$5.2M</p>
-                                    <p class="text-sm mt-1">Año 3</p>
+                                
+                                <div class="flex-1 text-center"><p class="text-sm mt-1">Año 2</p></div>
+                                <div class="flex-1 text-center"><p class="text-sm mt-1">Año 3</p></div>
+                                <div class="flex-1 text-center"><p class="text-sm mt-1">Año 4</p>
+                                <p class="text-sm mt-1">Segundo Fixi Hub</p>
                                 </div>
-                                <!-- Year 4 Label -->
-                                <div class="flex-1 text-center">
-                                    <p class="text-xs text-cyan-300 font-bold">$12.5M</p>
-                                    <p class="text-sm mt-1">Año 4</p>
-                                </div>
-                                <!-- Year 5 Label -->
-                                <div class="flex-1 text-center">
-                                    <p class="text-xs text-cyan-300 font-bold">$25M+</p>
-                                    <p class="text-sm mt-1">Año 5</p>
-                                </div>
+                                <div class="flex-1 text-center"><p class="text-sm mt-1">Año 5</p></div>
                             </div>
                         </div>
                     </div>
@@ -437,52 +534,76 @@
                     <div class="bg-gray-700 p-6 rounded-lg flex flex-col justify-center">
                         <h3 class="font-bold text-white mb-4">Métricas Clave</h3>
                         <ul class="space-y-4 text-gray-300">
-                            <li>
-                                <p class="font-semibold text-white">Ticket Promedio:</p>
-                                <p class="text-cyan-300">$250 USD</p>
-                            </li>
-                            <li>
-                                <p class="font-semibold text-white">Margen Bruto Proyectado:</p>
-                                <p class="text-cyan-300">~65%</p>
-                            </li>
-                            <li>
-                                <p class="font-semibold text-white">Costo de Adquisición (CAC):</p>
-                                <p class="text-cyan-300">&lt; $30 USD</p>
-                            </li>
-                            <li>
-                                <p class="font-semibold text-white">Lifetime Value (LTV):</p>
-                                <p class="text-cyan-300">&gt; $900 USD</p>
-                            </li>
+                            <li><p class="font-semibold text-white">Ticket Promedio:</p><p class="text-cyan-300">$1,418 MXN</p></li>
+                            <li><p class="font-semibold text-white">Margen Bruto Proyectado:</p><p class="text-cyan-300">~35.8%</p></li>
+                            <li><p class="font-semibold text-white">Costo de Adquisición (CAC):</p><p class="text-cyan-300">&lt; $83 MXN</p></li>
+                            <li><p class="font-semibold text-white">Lifetime Value (LTV):</p><p class="text-cyan-300">&gt; $16,500 MXN</p></li>
                         </ul>
                     </div>
                 </div>
-                <p class="mt-6 text-sm text-gray-400">*Las cifras son proyecciones basadas en análisis de mercado y supuestos del modelo de negocio.</p>
+                <p class="mt-6 text-sm text-gray-400">*Las cifras son proyecciones basadas en análisis de mercado y tipo de cambio de referencia.</p>
             </div>
 
 
 
 
 
-            <!-- Slide 10: La Petición -->
+
+            <!-- Slide 13: La Petición -->
             <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-4">La Petición (The Ask)</h2>
                 <p class="text-2xl mb-4">Buscamos una inversión Semilla de</p>
-                <p class="text-7xl font-black text-cyan-300 my-4">$1.5 Millones USD</p>
+                <p class="text-7xl font-black text-cyan-300 my-4">$4.5 Millones MXN</p>
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
-                    <div class="bg-gray-700 p-4 rounded-lg">
-                        <p class="text-3xl font-bold text-cyan-400">40%</p>
-                        <p>Desarrollo Tecnológico</p>
+                    <div class="bg-gray-700 p-4 rounded-lg"><p class="text-3xl font-bold text-cyan-400">32%</p><p>Desarrollo Tecnológico</p></div>
+                    <div class="bg-gray-700 p-4 rounded-lg"><p class="text-3xl font-bold text-cyan-400">42%</p><p>Inversión Operativa</p></div>
+                    <div class="bg-gray-700 p-4 rounded-lg"><p class="text-3xl font-bold text-cyan-400">26%</p><p>Marketing y Operaciones</p></div>
+                </div>
+            </div>
+        
+          
+            <!-- Slide 14: Uso Detallado de los Fondos 
+            <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Uso Detallado de los Fondos ($28M MXN)</h2>
+                <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                    
+                    <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-cyan-500">
+                        <h3 class="font-bold text-white text-xl mb-1">Desarrollo Tecnológico</h3>
+                        <p class="text-cyan-400 font-semibold text-lg mb-4">40% (~$11.2M)</p>
+                        <ul class="space-y-3 text-gray-300 text-sm list-disc list-inside">
+                            <li><span class="font-semibold">Equipo de Ingeniería (18 meses):</span><p class="ml-4 font-bold text-white">~$6.5M MXN</p></li>
+                            <li><span class="font-semibold">Plataforma de IA y Logística (FLO):</span><p class="ml-4 font-bold text-white">~$2.8M MXN</p></li>
+                            <li><span class="font-semibold">Infraestructura y Servicios Cloud:</span><p class="ml-4 font-bold text-white">~$1.9M MXN</p></li>
+                        </ul>
                     </div>
-                    <div class="bg-gray-700 p-4 rounded-lg">
-                        <p class="text-3xl font-bold text-cyan-400">35%</p>
-                        <p>Expansión Operativa</p>
+                    
+                    <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-cyan-500">
+                        <h3 class="font-bold text-white text-xl mb-1">Expansión Operativa</h3>
+                        <p class="text-cyan-400 font-semibold text-lg mb-4">35% (~$9.8M)</p>
+                        <ul class="space-y-3 text-gray-300 text-sm list-disc list-inside">
+                            <li><span class="font-semibold">Primer Fixi Hub (CDMX):</span>
+                                <p class="ml-4">- Renta, adecuación y equipamiento.</p>
+                                <p class="ml-4 font-bold text-white">~$3.7M MXN</p></li>
+                            <li><span class="font-semibold">Equipo de Operaciones (18 meses):</span><p class="ml-4 font-bold text-white">~$4.7M MXN</p></li>
+                            <li><span class="font-semibold">Inventario Inicial de Refacciones:</span><p class="ml-4 font-bold text-white">~$1.4M MXN</p></li>
+                        </ul>
                     </div>
-                     <div class="bg-gray-700 p-4 rounded-lg">
-                        <p class="text-3xl font-bold text-cyan-400">25%</p>
-                        <p>Marketing y Adquisición</p>
+                
+                    <div class="bg-gray-700 p-6 rounded-lg border-t-4 border-cyan-500">
+                        <h3 class="font-bold text-white text-xl mb-1">Marketing y Adquisición</h3>
+                        <p class="text-cyan-400 font-semibold text-lg mb-4">25% (~$7.0M)</p>
+                        <ul class="space-y-3 text-gray-300 text-sm list-disc list-inside">
+                            <li><span class="font-semibold">Marketing Digital (Lanzamiento):</span><p class="ml-4 font-bold text-white">~$2.8M MXN</p></li>
+                            <li><span class="font-semibold">Creación de Contenido y Marca:</span><p class="ml-4 font-bold text-white">~$1.4M MXN</p></li>
+                            <li><span class="font-semibold">Alianzas y Equipo de Ventas B2B:</span><p class="ml-4 font-bold text-white">~$2.8M MXN</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            -->
+            
+
+
 
             <!-- Slide 11: Equipo Fundador -->
             <div class="slide fade-in flex-col items-center justify-center p-8 md:p-12">
